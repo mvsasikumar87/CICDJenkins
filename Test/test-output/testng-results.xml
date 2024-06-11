@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="8431" started-at="2024-01-25T17:06:13Z" finished-at="2024-01-25T17:06:22Z">
+  <suite started-at="2024-06-06T07:09:04Z" name="Default suite" finished-at="2024-06-06T07:09:15Z" duration-ms="11637">
     <groups>
     </groups>
-    <test name="Test" duration-ms="8431" started-at="2024-01-25T17:06:13Z" finished-at="2024-01-25T17:06:22Z">
+    <test started-at="2024-06-06T07:09:04Z" name="Default test" finished-at="2024-06-06T07:09:15Z" duration-ms="11637">
       <class name="Login">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Login@7bb11784]" name="setUp" is-config="true" duration-ms="5524" started-at="2024-01-25T22:36:13Z" finished-at="2024-01-25T22:36:19Z">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Login@60db1c0e]" started-at="2024-06-06T12:39:04Z" name="setUp" finished-at="2024-06-06T12:39:13Z" duration-ms="9263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:Login@7bb11784]" name="openBrowser" duration-ms="2894" started-at="2024-01-25T22:36:19Z" finished-at="2024-01-25T22:36:22Z">
+        <test-method signature="openBrowser()[pri:0, instance:Login@60db1c0e]" started-at="2024-06-06T12:39:13Z" name="openBrowser" finished-at="2024-06-06T12:39:15Z" duration-ms="2343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Login@7bb11784]" name="tearDown" is-config="true" duration-ms="0" started-at="2024-01-25T22:36:22Z" finished-at="2024-01-25T22:36:22Z">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Login@60db1c0e]" started-at="2024-06-06T12:39:15Z" name="tearDown" finished-at="2024-06-06T12:39:15Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Login -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

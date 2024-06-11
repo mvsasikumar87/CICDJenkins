@@ -1,4 +1,5 @@
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -21,19 +22,25 @@ public class Login {
         driver = new FirefoxDriver();
      //    driver = new ChromeDriver();
          
-
+       // System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
+        FirefoxBinary firefoxBinary = new FirefoxBinary();
+        firefoxBinary.addCommandLineOptions("--headless");
     }
 
     @Test
     public void openBrowser() {
         // Navigate to a website
         driver.get("https://webapps.tekstac.com/SeleniumApp2/Library/LibraryCard.html");
-
+        
+      
         // Perform some actions or assertions if needed
         // For example, you can check the title of the page
        String pageTitle = driver.getTitle();
         System.out.println("Page Title: " + pageTitle);
     }
+    
+    
+
 
     @AfterClass
     public void tearDown() {
