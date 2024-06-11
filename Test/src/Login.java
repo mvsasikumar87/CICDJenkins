@@ -20,7 +20,7 @@ public class Login {
 
         // Initialize the FirefoxDriver
         driver = new FirefoxDriver();
-     //    driver = new ChromeDriver();
+     ////    driver = new ChromeDriver();
          
        // System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
         FirefoxBinary firefoxBinary = new FirefoxBinary();
