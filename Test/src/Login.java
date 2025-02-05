@@ -16,15 +16,24 @@ public class Login {
         // Set the path to the GeckoDriver executable
       //  System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 
-        System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+     //   System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
 
         // Initialize the FirefoxDriver
-        driver = new FirefoxDriver();
+    //    driver = new FirefoxDriver();
      ////    driver = new ChromeDriver();
          
        // System.setProperty("webdriver.gecko.driver", "/usr/bin/geckodriver");
         FirefoxBinary firefoxBinary = new FirefoxBinary();
-        firefoxBinary.addCommandLineOptions("--headless");
+    //    firefoxBinary.addCommandLineOptions("--headless");
+
+        System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+
+// Initialize Firefox options
+FirefoxOptions options = new FirefoxOptions();
+options.addArguments("--headless");  // Enable headless mode
+
+// Initialize the FirefoxDriver with options
+driver = new FirefoxDriver(options);
     }
 
     @Test
