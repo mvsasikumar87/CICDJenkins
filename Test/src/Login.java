@@ -37,7 +37,7 @@ public class Login {
      // Initialize the FirefoxDriver with options
   //   driver = new FirefoxDriver(options);
     	
-    	System.setProperty("webdriver.chrome.driver", "D:\\Soft\\133chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+    //	System.setProperty("webdriver.chrome.driver", "D:\\Soft\\133chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 
     	// Initialize Chrome options
     //	ChromeOptions options = new ChromeOptions();
@@ -45,7 +45,10 @@ public class Login {
 
     	// Initialize the ChromeDriver with options
     //	driver = new ChromeDriver(options);
-       driver = new ChromeDriver();
+       System.setProperty("webdriver.chrome.driver", "D:\\Soft\\133chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+    	ChromeOptions options = new ChromeOptions();
+    	driver = new ChromeDriver(options);
+     //  driver = new ChromeDriver();
 
     }
     @Test
