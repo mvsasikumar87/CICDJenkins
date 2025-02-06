@@ -47,6 +47,9 @@ public class Login {
     //	driver = new ChromeDriver(options);
        System.setProperty("webdriver.chrome.driver", "D:\\Soft\\133chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
     	ChromeOptions options = new ChromeOptions();
+       options.addArguments("--start-maximized"); // Starts browser maximized
+options.addArguments("--no-sandbox"); // Bypass OS security model (can be helpful in CI environments)
+options.addArguments("--disable-dev-shm-usage");
     	driver = new ChromeDriver(options);
      //  driver = new ChromeDriver();
 
