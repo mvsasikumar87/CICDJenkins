@@ -40,11 +40,12 @@ public class Login {
     	System.setProperty("webdriver.chrome.driver", "D:\\Soft\\133chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 
     	// Initialize Chrome options
-    	ChromeOptions options = new ChromeOptions();
-    	options.addArguments("--headless");  // Enable headless mode
+    //	ChromeOptions options = new ChromeOptions();
+    //	options.addArguments("--headless");  // Enable headless mode
 
     	// Initialize the ChromeDriver with options
-    	driver = new ChromeDriver(options);
+    //	driver = new ChromeDriver(options);
+       driver = new ChromeDriver();
 
     }
     @Test
